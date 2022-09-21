@@ -1,0 +1,120 @@
+.container-home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  gap: 1rem;
+}
+/* default Code Set -- Start */
+form {
+  background: var(--cf);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  color: var(--c4);
+  padding: 0.5rem;
+  border: 0.1rem solid var(--c3);
+  position: relative;
+  padding-bottom: 3rem;
+}
+form>div{
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .2em;
+}
+label {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+[type="file"] {
+  display: none;
+}
+.p-custom-file{
+  width: 100%;
+  position: relative;
+}
+.custom-file {
+  width: 100%;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding: 0.6em 0.3em;
+  border: 1px solid var(--c4);
+  border-radius: 0.3em;
+}
+.custom-file::before {
+  content: "Choose file...";
+  text-decoration: none;
+  margin-right: 1em;
+}
+.custom-file::after {
+  content: "Browse..";
+  background-color: var(--c4);
+  color: var(--c1);
+  text-decoration: none;
+  padding: 0.3em 1em;
+  border: 1px solid var(--c4);
+  border-radius: 0.2em;
+  position: absolute;
+  right: .4em;
+  bottom: .35em;
+}
+[type="text"],textarea{
+  color: var(--c4);
+  padding: .3em .4em;
+  border: .1em solid var(--c4);
+  outline: none;
+}
+select:focus-within,[type="number"]:focus-within,[type="text"]:focus-within,textarea:focus-within{
+  background-color: var(--c1);
+  font-weight: 700;
+  outline: .1em solid var(--c4);
+}
+[type="submit"] {
+  width: 93%;
+  background: var(--c4);
+  color: var(--cf);
+  font-size: 0.9em;
+  padding: 0.5em;
+  border: none;
+  outline: none;
+  position: absolute;
+  bottom: .5rem;
+  cursor: pointer;
+}
+/* End */
+
+/* profile */
+.profile-img > img {
+  width: 100%;
+  height: auto;
+  /* margin: 1em 0; */
+}
+/* Bio */
+
+
+/* portfolio */
+.website{
+  gap:0;
+}
+.website>input[type="text"]{
+  margin-bottom: 1em;
+}
+
+/* skill */
+.asdf{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  gap: 1em;
+}
+.asdf>*{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.asdf select,.asdf input{
+  color: var(--c4);
+  padding: .3em .4em;
+  border: .1em solid var(--c4);
+  outline: none;
+}

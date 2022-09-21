@@ -1,0 +1,87 @@
+<div class="container-home">
+  <form id="profile" name="profile" class="profile-img">
+    <label>Profile</label>
+    <img src="" alt="Preview" id="profilePreview" />
+    <input
+      type="file"
+      name="profileImg"
+      id="profileImg"
+      accept="image/*"
+      required
+    />
+    <div class="p-custom-file">
+      <label for="profileImg" class="custom-file"></label>
+    </div>
+    <input type="submit" id="sendProfile" value="Upload" />
+  </form>
+  <form id="form-bio" class="bio">
+    <label for="bio">Biography</label>
+    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+    <input type="submit" value="Update" />
+  </form>
+  <form id="form-image" class="image">
+    <label>Image</label>
+    <input type="file" name="image" id="image" accept="image/*" multiple required />
+    <div class="p-custom-file">
+      <label for="image" class="custom-file"></label>
+    </div>
+    <input type="submit" value="Upload" />
+  </form>
+  <form id="form-folio" class="website">
+    <label>Name:</label>
+    <input type="text" name="name" id="name" required />
+    <label for="web-link">Website Link:</label>
+    <input type="text" name="web-link" id="web-link" required />
+    <label>Image</label>
+    <input type="file" name="image" id="image" accept="image/*" required />
+    <div class="p-custom-file">
+      <label for="image" class="custom-file"></label>
+    </div>
+    <input type="submit" value="Upload" />
+  </form>
+  <form id="form-skills-post" class="website">
+    <div>
+      <label>Name:</label>
+      <input type="text" name="skill-name" id="skill-name" required />
+    </div>
+    <div class="asdf">
+      <div>
+        <label for="level">level:</label>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div>
+        <Label>Percentage:</Label>
+        <input
+          type="number"
+          name="percentage"
+          id=""
+          min="0"
+          max="100"
+          maxlength="2"
+          minlength="1"
+        />
+      </div>
+    </div>
+    <label>Image</label>
+    <input
+      type="file"
+      name="certi-img"
+      id="certificate"
+      accept="image/*"
+      required
+    />
+    <div class="p-custom-file">
+      <label for="image" class="custom-file"></label>
+    </div>
+    <div>
+      <label for="certi-by">Certificate By:</label>
+      <input type="text" name="certi-by" id="certificateBy" />
+    </div>
+    <input type="submit" value="Upload" />
+  </form>
+</div>
+<script type="module" src="/js/home.js"></script>

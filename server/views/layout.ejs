@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="do not list in search engine" />
+    <!-- StyleSheet -->
+    <link href="/css/layout.css" rel="stylesheet" />
+    <link href="/css/<%= css %>.css" rel="stylesheet" />
+    <!-- javaScript -->
+    <script src="/js/jquery-3.6.0.main.js"></script>
+    <script type="module" src="/js/layout.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="brandname">
+        <img src="/icon/menu.png" class="icons" />
+        <a href="/" id="logo">
+          <img src="/image/logo.png" />
+          Webdeer.in
+        </a>
+      </div>
+        <div id="msg"></div>
+    </div>
+    <div id="sidebar">
+      <div id="sub-sidebar">
+        <a href="/" id="home" class="link">
+          <img src="/icon/home.png" class="icon" />Home
+        </a>
+        <a href="/portfolio" id="portfolio" class="link">
+          <img src="/icon/portfolio.png" class="icon" />Portfolio
+        </a>
+        <a href="/about" id="about" class="link">
+          <img src="/icon/about.png" class="icon" />About
+        </a>
+        <a href="/analytics" class="link" id="analytics">
+          <img src="/icon/analyst.png" class="icon" />Analytics
+        </a>
+        <a href="/setting" id="setting" class="link">
+          <img src="/icon/setting.png" class="icon" />Setting
+        </a>
+      </div>
+    </div>
+    <div class="container"><%- body %></div>
+  </body>
+</html>

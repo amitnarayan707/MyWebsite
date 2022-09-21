@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+* .env
+* server/node_modules
+* application/node_modules
