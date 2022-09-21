@@ -1,0 +1,28 @@
+/* header style start */
+.header-style{
+    width: 100vw;
+    height: 40em;
+    position: absolute;    
+    top: 4rem;
+    z-index: -5;
+}
+
+.header-style > span{
+    position: absolute;
+    border-radius: 50%;
+    animation: bub 5s linear infinite;
+}
+
+@keyframes bub {
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,16 @@
+.footer{
+    height: 3rem;
+    background-color: var(--c4);
+    color: var(--c1);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 5px 10px;
+
+}
+
+ul>li{
+    list-style: none;
+}
+

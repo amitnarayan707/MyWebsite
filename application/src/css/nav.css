@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,600&family=Nanum+Gothic:wght@700&display=swap');
+:root {
+  --cf: #fff;
+  --cb: #2e2e2e;
+  --cy: #F66B0E;
+  --c1: #e8f9fd;
+  --c2: #79dae8;
+  --c3: #0aa1dd;
+  --c4: #2155cd;
+  --icon-size: 16px;
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f8fd;
+}
+.nav{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 65px;
+    align-items: space-between;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.brand{
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    align-content: center;
+    align-items: center;
+}
+
+.logo>img{
+    width: 45px;
+}
+.brand-name{
+    width: 70%;
+}
+.brand-name>a{
+    text-decoration: none;
+    color: var(--c4);
+    font-size: 28px;
+}
+/* .brand-name b{
+    color: var(--cb);
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+} */
+.navbar{
+    width: 60%;
+}
+.navbar-style{
+    border-top: 65px solid var(--c4);
+    border-left: 60px solid transparent;
+    width: 60%;
+    position: absolute;
+    z-index: -1;
+}
+
+.navbar > ul{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 60px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+.navbar>ul>li{
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar>ul>li>a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--c1);
+}
+.navbar>ul>li>a:hover{
+    text-decoration: underline;
+    color: var(--cy);
+}
+.navbar>ul>li>button{
+    background-color: var(--c1);
+    font-size: 16px;
+    font-weight: 600;   
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    position: absolute;
+    top: -3px;
+    right: 100px;
+    cursor: pointer;
+}
+.navbar>ul>li>button:hover{
+    outline: 2px solid var(--cy);
+}

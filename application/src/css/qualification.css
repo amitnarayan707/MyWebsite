@@ -1,0 +1,22 @@
+.qualification{
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    padding-bottom: 10px;
+    border: 2px solid var(--c4);
+    margin: auto;
+}
+.head-name{
+    background-color: var(--c4);
+    color: var(--c1);
+    font-size: 22px;
+    padding: 10px;
+}
+/* hr{background-color: var(--c4);} */
+.card{
+    color: var(--cb);
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 10px;
+}
